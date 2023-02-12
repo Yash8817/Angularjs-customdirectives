@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body ng-app="myapp">        
+        <div ng-controller="cdirdemo">
+            <h1>AngularJS Custom Directives : Get All Products</h1>           
+            <hr>           
+            <div ng-repeat="product in products">
+                <stockitem item="product" offer="New year sale"></stockitem> 
+            </div>            
+        </div>
+    </body>
+</html>

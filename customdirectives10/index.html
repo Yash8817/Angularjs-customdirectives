@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body ng-app="myapp">        
+        <div ng-controller="cdirdemo">
+            <h1>AngularJS Custom Directives</h1>           
+            <hr>
+            <h1>Use custom directive - ng-transclude </h1>                 
+            <parent-element country="India" message="{{randomMessage}}">
+                This will be placed at ng-transclude location
+                <child-element state="Karnataka"></child-element>
+            </parent-element>            
+        </div>
+    </body>
+</html>

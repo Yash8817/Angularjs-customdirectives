@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body ng-app="myapp">        
+        <div ng-controller="cdirdemo">
+            <h1>AngularJS Custom Directives</h1>           
+            <hr>                     
+            <h1>Use custom directive as tag with attribute</h1>
+            <msg-welcome-user username="Ratan" message={{randomMessage}}></msg-welcome-user>    
+            <hr>
+            <h2>My Cricket Team Custom Directive</h2>
+            <cricket team="India" captain="Virat"></cricket>
+            <br><br>
+            <cricket team="Aus" captain="Smith"></cricket>
+        </div>
+    </body>
+</html>
